@@ -16,3 +16,11 @@ function generateRandomPass(){
 btn.addEventListener("click",()=>{
     paraEl.value=generateRandomPass();
 })
+function copyPass(){
+    paraEl.select();
+    document.execCommand("copy");
+}
+let copyB=document.querySelector(".display img");
+copyB.addEventListener("click",()=>{
+    copyPass();
+})
